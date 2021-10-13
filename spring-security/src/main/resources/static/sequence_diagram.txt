@@ -1,0 +1,16 @@
+title Spring boot security with JWT
+
+participant User
+participant Filter
+participant HomeController
+database SpringSecurity
+
+
+User->HomeController:Login
+HomeController->SpringSecurity:Check username and password
+HomeController->HomeController:Generate JWT token
+User<--HomeController:Login success\nReturn JWT token
+User->Filter:Call /rest/admin api\nWith token in header
+Filter->Filter:Verify JWT and authorization
+Filter->HomeController:Call /rest/admin
+User<--HomeController:Return
