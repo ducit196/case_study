@@ -51,25 +51,37 @@ Try to use another user have only user role will be get access deny
 ![](src/main/resources/image/deny.png)
 
 ## Project Structer
-###Controller
-Provide controller class for restful API
-###Filter
+**Controller**
+
+Provide controller class for restful API.
+
+**Filter**
+
 Filter class to authentication request before call to controller class.
-###Model
-User entity mapping JPA with user table
-###Repository
-Provide function manipulate data with database
-###Security
+
+**Model**
+
+User entity mapping JPA with user table.
+
+**Repository**
+
+Provide function manipulate data with database.
+
+**Security**
+
 JwtService class: provide service generate JWT token after login success, validate token,...
 
 SecurityConfiguration class: config security.
 
 CustomAccessDeniedHandler, RestAuthenticationEntryPoint class: customer response in exception case.
-###Service
+
+**Service**
+
 Provide user function.
 
-## Running instruction
+## Running instructions
 Run database script: resources/sql/datatase_script.sql
+
 Run maven: mvn spring-boot:run
 
 
