@@ -3,10 +3,10 @@ Very simple project for spring security with JWT, JPA, Mysql
 
 ## Table of Contents
 
-* [Requirements](#requirements)
-* [Sequence diagram](#sequence diagram)
-* [Project Structer](#project structer)
-* [Running Instructions](#running instructions)
+* [Requirements](#Requirement)
+* [Sequence diagram](#sequence-diagram)
+* [Project Structer](#project-structer)
+* [Running Instructions](#running-instructions)
   
 ## Requirement
 Create simple project for spring security with JWT, JPA, Mysql.
@@ -51,21 +51,21 @@ Try to use another user have only user role will be get access deny
 ![](src/main/resources/image/deny.png)
 
 ## Project Structer
-####Controller
+###Controller
 Provide controller class for restful API
-####Filter
+###Filter
 Filter class to authentication request before call to controller class.
-####Model
+###Model
 User entity mapping JPA with user table
-####Repository
+###Repository
 Provide function manipulate data with database
-####Security
+###Security
 JwtService class: provide service generate JWT token after login success, validate token,...
 
 SecurityConfiguration class: config security.
 
 CustomAccessDeniedHandler, RestAuthenticationEntryPoint class: customer response in exception case.
-####Service
+###Service
 Provide user function.
 
 ## Running instruction
